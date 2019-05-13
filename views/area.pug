@@ -1,0 +1,20 @@
+html
+html(lang="en")
+head
+   include shared/head.pug
+body
+
+ include shared/navbar.pug
+ include shared/headline.pug
+br
+
+.container
+    .row
+        - for(let i=1;i<numberOfImages+1; i++)
+            .col-md-6
+                .thumbnail
+                    img(src='/images/' +area+ '/' +area+ '/' + '-' + i + '.jpg', alt="")
+               
+       
+   
+    include shared/includesJS.pug

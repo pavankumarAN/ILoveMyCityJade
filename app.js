@@ -4,7 +4,7 @@ const path = require('path');
 const routes = require('./routes/routes');
 const PORT = process.env.PORT || 3000;
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'pug');
 
 app.get('/', routes.home);
 app.get('/:area', routes.area);
